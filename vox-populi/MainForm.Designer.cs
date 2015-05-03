@@ -85,6 +85,8 @@
       // 
       // groupBoxRight
       // 
+      this.groupBoxRight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
       this.groupBoxRight.Controls.Add(this.label7);
       this.groupBoxRight.Controls.Add(this.label8);
       this.groupBoxRight.Controls.Add(this.trackBarRAppoval);
@@ -127,6 +129,8 @@
       // 
       // groupBoxCentre
       // 
+      this.groupBoxCentre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
       this.groupBoxCentre.Controls.Add(this.label5);
       this.groupBoxCentre.Controls.Add(this.label6);
       this.groupBoxCentre.Controls.Add(this.trackBarCApproval);
@@ -169,6 +173,8 @@
       // 
       // groupBoxLeft
       // 
+      this.groupBoxLeft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
       this.groupBoxLeft.Controls.Add(this.label3);
       this.groupBoxLeft.Controls.Add(this.trackBarLApproval);
       this.groupBoxLeft.Controls.Add(this.label4);

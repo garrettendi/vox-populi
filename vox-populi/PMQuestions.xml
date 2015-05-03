@@ -5,19 +5,15 @@
     <responses>
       <response>
         <text>Yes, I plan on talking extensively with our esteemed colleagues in the Eurozone, with the possibility of Aid.</text>
-        <fl>0.1</fl>
         <l>0.05</l>
         <c>0.025</c>
         <r>0.001</r>
-        <fr>-0.1</fr>
       </response>
       <response>
         <text>I plan on providing no aid and am giving serious consideration to leaving the EU to better concern ourselves with our own affairs.</text>
-        <fl>-0.1</fl>
         <l>-0.1</l>
         <c>-0.05</c>
         <r>-0.01</r>
-        <fr>0.1</fr>
       </response>
     </responses>
   </question>
@@ -26,19 +22,15 @@
     <responses>
       <response>
         <text>This greatly concerns me and I fully intend to give my full support to my esteemed colleague who raised the question.</text>
-        <fl>0.05</fl>
         <l>0.05</l>
         <c>0.03</c>
         <r>0.01</r>
-        <fr>0.075</fr>
       </response>
       <response>
         <text>The NHS service is of great importance to the nation, but issues such as this clearly shows we must consider fundamental shifts in the health care of our nation.</text>
-        <fl>-0.15</fl>
         <l>-0.1</l>
         <c>-0.05</c>
         <r>0.05</r>
-        <fr>-0.1</fr>
       </response>
     </responses>
   </question>

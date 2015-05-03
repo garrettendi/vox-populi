@@ -57,12 +57,12 @@ namespace VoxPopuli
         res = popup.ShowDialog();
         if (res == System.Windows.Forms.DialogResult.OK)
         {
-          entry = new PMQuestionsLogEntry(q.text, "RESPONSE");
+          entry = new PMQuestionsLogEntry(q.text, popup.ResponseSelected.text);
           PMLog.Add(entry);
         }
         else if (res == System.Windows.Forms.DialogResult.Cancel)
         {
-          entry = new PMQuestionsLogEntry(q.text, "No futher questions!");
+          entry = new PMQuestionsLogEntry(q.text, "No further questions!");
           PMLog.Add(entry);
           break;
         }

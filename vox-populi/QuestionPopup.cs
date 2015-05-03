@@ -32,6 +32,12 @@ namespace VoxPopuli
       this.comboBoxResponse.DataSource = responses;
     }
 
+    private VoxPopuli.PMQuestions_Table.responseRow response;
+    public VoxPopuli.PMQuestions_Table.responseRow ResponseSelected
+    {
+      get { return response; }
+    }
+
     private void buttonRespond_Click(object sender, EventArgs e)
     {
       this.DialogResult = System.Windows.Forms.DialogResult.OK;
@@ -42,6 +48,11 @@ namespace VoxPopuli
     {
       this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
       this.Close();
+    }
+
+    private void comboBoxResponse_SelectedValueChanged(object sender, EventArgs e)
+    {
+      response = comboBoxResponse.SelectedItem as VoxPopuli.PMQuestions_Table.responseRow;
     }
   }
 }

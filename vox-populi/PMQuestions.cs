@@ -918,16 +918,12 @@ namespace VoxPopuli {
             
             private global::System.Data.DataColumn columntext;
             
-            private global::System.Data.DataColumn columnfl;
-            
             private global::System.Data.DataColumn columnl;
             
             private global::System.Data.DataColumn columnc;
             
             private global::System.Data.DataColumn columnr;
-            
-            private global::System.Data.DataColumn columnfr;
-            
+                      
             private global::System.Data.DataColumn columnresponses_Id;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -973,14 +969,6 @@ namespace VoxPopuli {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn flColumn {
-                get {
-                    return this.columnfl;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn lColumn {
                 get {
                     return this.columnl;
@@ -1002,15 +990,7 @@ namespace VoxPopuli {
                     return this.columnr;
                 }
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn frColumn {
-                get {
-                    return this.columnfr;
-                }
-            }
-            
+              
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn responses_IdColumn {
@@ -1056,15 +1036,13 @@ namespace VoxPopuli {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public responseRow AddresponseRow(string text, decimal fl, decimal l, decimal c, decimal r, decimal fr, responsesRow parentresponsesRowByresponses_response) {
+            public responseRow AddresponseRow(string text, decimal l, decimal c, decimal r, responsesRow parentresponsesRowByresponses_response) {
                 responseRow rowresponseRow = ((responseRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         text,
-                        fl,
                         l,
                         c,
                         r,
-                        fr,
                         null};
                 if ((parentresponsesRowByresponses_response != null)) {
                     columnValuesArray[6] = parentresponsesRowByresponses_response[0];
@@ -1092,11 +1070,9 @@ namespace VoxPopuli {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columntext = base.Columns["text"];
-                this.columnfl = base.Columns["fl"];
                 this.columnl = base.Columns["l"];
                 this.columnc = base.Columns["c"];
                 this.columnr = base.Columns["r"];
-                this.columnfr = base.Columns["fr"];
                 this.columnresponses_Id = base.Columns["responses_Id"];
             }
             
@@ -1105,24 +1081,18 @@ namespace VoxPopuli {
             private void InitClass() {
                 this.columntext = new global::System.Data.DataColumn("text", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntext);
-                this.columnfl = new global::System.Data.DataColumn("fl", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfl);
                 this.columnl = new global::System.Data.DataColumn("l", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnl);
                 this.columnc = new global::System.Data.DataColumn("c", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnc);
                 this.columnr = new global::System.Data.DataColumn("r", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnr);
-                this.columnfr = new global::System.Data.DataColumn("fr", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfr);
                 this.columnresponses_Id = new global::System.Data.DataColumn("responses_Id", typeof(int), null, global::System.Data.MappingType.Hidden);
                 base.Columns.Add(this.columnresponses_Id);
                 this.columntext.AllowDBNull = false;
-                this.columnfl.AllowDBNull = false;
                 this.columnl.AllowDBNull = false;
                 this.columnc.AllowDBNull = false;
                 this.columnr.AllowDBNull = false;
-                this.columnfr.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1400,17 +1370,6 @@ namespace VoxPopuli {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal fl {
-                get {
-                    return ((decimal)(this[this.tableresponse.flColumn]));
-                }
-                set {
-                    this[this.tableresponse.flColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public decimal l {
                 get {
                     return ((decimal)(this[this.tableresponse.lColumn]));
@@ -1439,17 +1398,6 @@ namespace VoxPopuli {
                 }
                 set {
                     this[this.tableresponse.rColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal fr {
-                get {
-                    return ((decimal)(this[this.tableresponse.frColumn]));
-                }
-                set {
-                    this[this.tableresponse.frColumn] = value;
                 }
             }
             

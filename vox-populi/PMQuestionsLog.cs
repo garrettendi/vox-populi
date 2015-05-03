@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace VoxPopuli
 {
+  [Serializable]
   public class PMQuestionsLogEntry
   {
     public PMQuestionsLogEntry(string q, string r)

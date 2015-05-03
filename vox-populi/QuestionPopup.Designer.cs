@@ -54,7 +54,7 @@
       this.buttonFinish.Name = "buttonFinish";
       this.buttonFinish.Size = new System.Drawing.Size(137, 23);
       this.buttonFinish.TabIndex = 1;
-      this.buttonFinish.Text = "No Further Questions";
+      this.buttonFinish.Text = "No Further Questions!";
       this.buttonFinish.UseVisualStyleBackColor = true;
       this.buttonFinish.Click += new System.EventHandler(this.buttonFinish_Click);
       // 
@@ -63,12 +63,13 @@
       this.comboBoxResponse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
       this.comboBoxResponse.DisplayMember = "text";
+      this.comboBoxResponse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
       this.comboBoxResponse.FormattingEnabled = true;
       this.comboBoxResponse.Location = new System.Drawing.Point(77, 111);
       this.comboBoxResponse.Name = "comboBoxResponse";
       this.comboBoxResponse.Size = new System.Drawing.Size(445, 21);
       this.comboBoxResponse.TabIndex = 3;
-      this.comboBoxResponse.Text = "RESPONSE";
+      this.comboBoxResponse.SelectedValueChanged += new System.EventHandler(this.comboBoxResponse_SelectedValueChanged);
       // 
       // labelResponse
       // 

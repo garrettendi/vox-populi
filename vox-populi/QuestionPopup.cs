@@ -23,6 +23,7 @@ namespace VoxPopuli
     public QuestionPopup(QuestionType type, string question, List<VoxPopuli.PMQuestions_Table.responseRow> responses)
     {
       InitializeComponent();
+     
 
       if (type != QuestionType.PrimeMinister)
         this.buttonFinish.Visible = false;
@@ -30,6 +31,23 @@ namespace VoxPopuli
       this.labelQuestion.Text = question;
 
       this.comboBoxResponse.DataSource = responses;
+      this.comboBoxResponse.DropDownWidth = DropDownWidth(comboBoxResponse);
+    }
+
+    // Javed Akram - cc by-sa 3.0 - https://creativecommons.org/licenses/by-sa/3.0/
+    // http://stackoverflow.com/questions/4842160/auto-width-of-comboboxs-content
+    int DropDownWidth(ComboBox myCombo)
+    {
+      int maxWidth = 0, temp = 0;
+      foreach (DataRow obj in myCombo.Items)
+      {
+        temp = TextRenderer.MeasureText(obj["text"].ToString(), myCombo.Font).Width;
+        if (temp > maxWidth)
+        {
+          maxWidth = temp;
+        }
+      }
+      return maxWidth;
     }
 
     private VoxPopuli.PMQuestions_Table.responseRow response;

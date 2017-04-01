@@ -54,7 +54,37 @@ namespace VoxPopuli
         OnPropertyChanged("RStr");
       }
     }
-    
+
+    private int fr = 50;
+    public int FR
+    {
+      get
+      {
+        return fr;
+      }
+      set
+      {
+        fr = value;
+        OnPropertyChanged("FR");
+        OnPropertyChanged("FRStr");
+      }
+    }
+
+    private int fl = 50;
+    public int FL
+    {
+      get
+      {
+        return fl;
+      }
+      set
+      {
+        fl = value;
+        OnPropertyChanged("FL");
+        OnPropertyChanged("FLStr");
+      }
+    }
+
     public string LStr
     {
       get
@@ -76,6 +106,22 @@ namespace VoxPopuli
       get
       {
         return $"{R}%";
+      }
+    }
+
+    public string FLStr
+    {
+      get
+      {
+        return $"{FL}%";
+      }
+    }
+
+    public string FRStr
+    {
+      get
+      {
+        return $"{FR}%";
       }
     }
 

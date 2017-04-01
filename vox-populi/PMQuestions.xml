@@ -5,15 +5,19 @@
     <responses>
       <response>
         <text>Yes, I plan on talking extensively with our esteemed colleagues in the Eurozone, with the possibility of Aid.</text>
+        <fl>0.05</fl>
         <l>0.05</l>
         <c>0.025</c>
         <r>0.001</r>
+        <fr>-0.05</fr>
       </response>
       <response>
         <text>I plan on providing no aid and am giving serious consideration to leaving the EU to better concern ourselves with our own affairs.</text>
+        <fl>0.1</fl>
         <l>-0.1</l>
         <c>-0.05</c>
         <r>-0.01</r>
+        <fr>0.20</fr>
       </response>
     </responses>
   </question>
@@ -22,15 +26,19 @@
     <responses>
       <response>
         <text>This greatly concerns me and I fully intend to give my full support to my esteemed colleague who raised the question.</text>
+        <fl>-0.025</fl>
         <l>0.05</l>
         <c>0.03</c>
         <r>0.01</r>
+        <fr>-0.05</fr>
       </response>
       <response>
         <text>The NHS service is of great importance to the nation, but issues such as this clearly shows we must consider fundamental shifts in the health care of our nation.</text>
+        <fl>-0.15</fl>
         <l>-0.1</l>
         <c>-0.05</c>
         <r>0.05</r>
+        <fr>0.15</fr>
       </response>
     </responses>
   </question>
@@ -39,21 +47,27 @@
     <responses>
       <response>
         <text>I am committed to seeing tax reforms that will benefit working class families, but we also need to commit to ensuring those same families have the social services they need</text>
+        <fl>0.03</fl>
         <l>0.03</l>
         <c>0.01</c>
         <r>0.01</r>
+        <fr>0.03</fr>
       </response>
       <response>
         <text>High taxes are causing a real struggle in working class families due to the atrocious budgeting of our predecessors. We are committed to reforms!</text>
+        <fl>-0.05</fl>
         <l>0.0</l>
         <c>0.0</c>
         <r>0.05</r>
+        <fr>0.05</fr>
       </response>
       <response>
         <text>Why should working class families suffer paying high taxes when there are so many corporations and high earners dodging their fair share of taxes? This will be changed in our policy!</text>
+        <fl>0.1</fl>
         <l>0.1</l>
         <c>0.05</c>
         <r>-0.1</r>
+        <fr>-0.15</fr>
       </response>
     </responses>
   </question>
@@ -62,21 +76,27 @@
     <responses>
       <response>
         <text>While we support gay marriage, it is the right of every venue to only serve those who they wish to serve</text>
+        <fl>-0.1</fl>
         <l>-0.03</l>
         <c>0.03</c>
         <r>0.07</r>
+        <fr>0.15</fr>
       </response>
       <response>
         <text>I am aware of a civil dispute arising from this, and we give our full support to Mr Wright.</text>
+        <fl>0.1</fl>
         <l>0.1</l>
         <c>0.05</c>
         <r>0.0</r>
+        <fr>-0.05</fr>
       </response>
       <response>
         <text>This a tricky area, but we have to understand that marriage is an institution of historial note, and I am hesitant to change policy.</text>
+        <fl>-0.1</fl>
         <l>-0.1</l>
         <c>-0.05</c>
         <r>0.05</r>
+        <fr>0.075</fr>
       </response>
     </responses>
   </question>
@@ -85,15 +105,19 @@
     <responses>
       <response>
         <text>I think we need to take control of our state schools and form more academies, which are proven to raise grades.</text>
+        <fl>-0.05</fl>
         <l>-0.05</l>
         <c>-0.01</c>
         <r>0.05</r>
+        <fr>0.0</fr>
       </response>
       <response>
         <text>We need to be concerned with forming valuable members of our society and we need to allow individual schools to take the decisions they know best to achieve this.</text>
+        <fl>-0.05</fl>
         <l>0.03</l>
         <c>0.01</c>
         <r>-0.07</r>
+        <fr>-0.05</fr>
       </response>
     </responses>
   </question>

@@ -78,23 +78,31 @@ namespace VoxPopuli
 
     private void ApplyScore(QuestionPopup popup)
     {
-      decimal l, c, r;
+      decimal fl, l, c, r, fr;
 
+      fl = score.FL * (1 + popup.ResponseSelected.fl);
       l = score.L * (1 + popup.ResponseSelected.l);
       c = score.C * (1 + popup.ResponseSelected.c);
       r = score.R * (1 + popup.ResponseSelected.r);
+      fr = score.FR * (1 + popup.ResponseSelected.fr);
 
+      score.FL = (int)Math.Round(fl, MidpointRounding.AwayFromZero);
       score.L = (int)Math.Round(l, MidpointRounding.AwayFromZero);
       score.C = (int)Math.Round(c, MidpointRounding.AwayFromZero);
       score.R = (int)Math.Round(r, MidpointRounding.AwayFromZero);
+      score.FR = (int)Math.Round(fr, MidpointRounding.AwayFromZero);
 
+      if (score.FL > 100) score.FL = 100;
       if (score.L > 100) score.L = 100;
       if (score.C > 100) score.C = 100;
       if (score.R > 100) score.R = 100;
+      if (score.FR > 100) score.FR = 100;
 
+      if (score.FL < 0) score.FL = 0;
       if (score.L < 0) score.L = 0;
       if (score.C < 0) score.C = 0;
       if (score.R < 0) score.R = 0;
+      if (score.FR < 0) score.FR = 0;
     }
 
     private void listBoxPmLog_SelectedIndexChanged(object sender, EventArgs e)
@@ -130,6 +138,16 @@ namespace VoxPopuli
     private void trackBarCApproval_ValueChanged(object sender, EventArgs e)
     {
       trackBarCApproval.Value = score.C;
+    }
+
+    private void trackBarFRApproval_VisibleChanged(object sender, EventArgs e)
+    {
+      trackBarFRApproval.Value = score.FR;
+    }
+
+    private void trackBarFLApproval_VisibleChanged(object sender, EventArgs e)
+    {
+      trackBarFLApproval.Value = score.FL;
     }
   }
 }

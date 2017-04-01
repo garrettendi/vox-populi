@@ -16,9 +16,11 @@
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element name="text" type="xs:string"></xs:element>
+                          <xs:element name="fl" type="xs:decimal"></xs:element>
                           <xs:element name="l" type="xs:decimal"></xs:element>
                           <xs:element name="c" type="xs:decimal"></xs:element>
                           <xs:element name="r" type="xs:decimal"></xs:element>
+                          <xs:element name="fr" type="xs:decimal"></xs:element>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>

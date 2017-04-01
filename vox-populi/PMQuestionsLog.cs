@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,7 @@ namespace VoxPopuli
     public string Response { get; set; }
   }
 
-  public class PMQuestionsLog : List<PMQuestionsLogEntry>
+  public class PMQuestionsLog : BindingList<PMQuestionsLogEntry>
   {
   }
 }

@@ -14,9 +14,11 @@ namespace VoxPopuli
     [STAThread]
     static void Main()
     {
+      Score score = new Score();
+
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new MainForm());
+      Application.Run(new MainForm(score));
     }
   }
 }

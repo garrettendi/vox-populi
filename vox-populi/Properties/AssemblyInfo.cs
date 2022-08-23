@@ -17,7 +17,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyCompany("Dale Hards")]
 [assembly: AssemblyProduct("The Voice Of The People")]
-[assembly: AssemblyCopyright("Copyright © 2014-2017")]
+[assembly: AssemblyCopyright("Copyright © 2014-2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
